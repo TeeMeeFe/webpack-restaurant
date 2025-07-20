@@ -8,27 +8,30 @@
 }
 
 html {
-    background-color: #801080;
+    --color1: #B0A010;
+    --color2: #C57925;
+    --color-outer: #502700;
+    --color-inner: #CACA20;
+    --color-button-hover: #D8A0A0;
+
+    background-color: var(--color1);
 }
 
 header {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
     font-size: 3rem;
-    background-color: blueviolet;
+    background-color: var(--color2);
+
+    width: 100%;
     margin: auto;
     padding-top: 1em;
-
-    max-width: 50%;
 }
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
-    padding: 2.5em 0;
+    padding-bottom: 2.5em;
 }
 
 nav > button {
@@ -39,9 +42,142 @@ nav > button {
 
 button:hover {
     cursor: pointer;
-    color: #D8A0A0;
+    color: var(--color-button-hover);
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
     font-size: 2rem;
+}
+
+footer {
+    background-color: var(--color2);
+    margin-top: auto;
+}
+
+div#content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+
+    border-radius: 1em;
+    background-color: var(--color2);
+}
+
+.container > * {
+    font-size: 2rem;
+    margin: 0.5em;
+}
+
+.about-heading-container {
+    margin-top: 2em;
+
+    background-color: var(--color-outer);
+    border-radius: 8px;
+}
+
+.about-heading-container > h1 {
+    background-color: var(--color-inner);
+    border-radius: 8px;
+
+    padding: 0.4em;
+
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.review-container {
+    background-color: var(--color-outer);
+    border-radius: 8px;
+
+    max-width: 50%;
+    padding: 1em;
+}
+
+.inner-review-container {
+    background-color: var(--color-inner);
+    border-radius: 8px;
+
+    padding: 0.4em;
+}
+
+.inner-review-container > h2 {
+    text-align: justify;
+}
+
+.inner-review-container > h3 {
+    text-align: right;
+    margin-top: -1em;
+}
+
+.openhours-container {
+    background-color: var(--color-outer);
+    border-radius: 8px;
+
+    padding: 0.4em;
+}
+
+.openhours-inner-container {
+    background-color: var(--color-inner);
+    border-radius: 8px;
+
+    padding: 0.4em;
+}
+
+.openhours-inner-container > h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.4em;
+
+    text-align: center;
+}
+
+.openhours-inner-container > ul,
+ul > li {
+    list-style: none;
+    font-size: 1.6rem;
+
+    text-align: center;
+    padding: 0.4em;
+}
+
+.location-container  {
+    background-color: var(--color-outer);
+    border-radius: 8px;
+
+    padding: 0.4em;
+    margin-bottom: 2em;
+}
+
+.location-inner-container {
+    background-color: var(--color-inner);
+    border-radius: 8px;
+
+    padding: 0.4em;
+}
+
+.location-inner-container > * {
+    font-size: 1.6rem;
+
+    text-align: center;
+    padding: 0.4em;
+}
+
+.footer-container {
+    font-size: 2em;
+    text-align: center;
+
+    padding: 1em;
 }
