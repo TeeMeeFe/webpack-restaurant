@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    min-height: 100vh;
     font-size: 2rem;
     justify-content: space-between;
 }
@@ -125,7 +125,7 @@ div#content {
 
 .inner-review-container > h3 {
     text-align: right;
-    margin-top: -1em;
+    margin-top: -0.7em;
 }
 
 .openhours-container {
