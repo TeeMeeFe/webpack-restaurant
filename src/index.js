@@ -13,13 +13,13 @@ const screenController = () => {
 
         switch(e.target.classList.value) {
             case "home":
-                buildAboutPage();
-                break
-            case "menu":
                 buildHomePage();
                 break
-            case "about":
+            case "menu":
                 buildMenuPage();
+                break
+            case "about":
+                buildAboutPage();
                 break
         }
     });
