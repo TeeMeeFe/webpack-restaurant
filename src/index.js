@@ -31,6 +31,7 @@ const screenController = () => {
         }
     });
     
+    buildHomePage(); // Default to home page
     console.log("Script loaded successfully...");
 }
 

@@ -163,3 +163,7 @@ ul > li {
 
     padding: 1em;
 }
+
+ul.ul-left > li{
+    text-align: left;
+}
