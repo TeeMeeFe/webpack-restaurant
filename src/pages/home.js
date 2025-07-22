@@ -9,8 +9,9 @@ export const buildHomePage = () => {
     // Methods that build the entire content page, in order
     const buildHeader = () => {
         const div = document.createElement("div");
-        div.classList = "about-heading-container container";
+        div.classList = "about-heading-container outer-container container";
         const h1 = document.createElement("h1");
+        h1.classList = "inner-container";
         h1.textContent = "TeeMeeFe's biggest restaurant site ever";
 
         div.appendChild(h1);
@@ -21,9 +22,9 @@ export const buildHomePage = () => {
 
     const buildReview = () => {
         const outerDiv = document.createElement("div");
-        outerDiv.classList = "review-container container";
+        outerDiv.classList = "review-container outer-container container";
         const innerDiv = document.createElement("div");
-        innerDiv.classList = "inner-review-container container";
+        innerDiv.classList = "inner-review-container inner-container container";
         const h2 = document.createElement("h2");
         h2.textContent =   "If you're a food lover or just someone who appreciates brilliant digital experiences, \
                             TeeMeeFe's Biggest Restaurant Website Ever is a must-visit destination. \
@@ -42,9 +43,9 @@ export const buildHomePage = () => {
 
     const buildOpenHours = () => {
         const outerDiv = document.createElement("div");
-        outerDiv.classList = "openhours-container container";
+        outerDiv.classList = "openhours-container outer-container container";
         const innerDiv = document.createElement("div");
-        innerDiv.classList = "openhours-inner-container";
+        innerDiv.classList = "openhours-inner-container inner-container";
 
         const h2 = document.createElement("h2");
         h2.textContent = "Open hours";
@@ -70,9 +71,9 @@ export const buildHomePage = () => {
 
     const buildLocation = () => {
         const outerDiv = document.createElement("div");
-        outerDiv.classList = "location-container container";
+        outerDiv.classList = "location-container outer-container container";
         const innerDiv = document.createElement("div");
-        innerDiv.classList = "location-inner-container";
+        innerDiv.classList = "location-inner-container inner-container";
 
         const textDiv = document.createElement("div");
         textDiv.classList = "location";
