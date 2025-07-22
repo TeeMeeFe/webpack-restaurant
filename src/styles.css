@@ -1,0 +1,169 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --color1: #B0A010;
+    --color2: #C57925;
+    --color-outer: #502700;
+    --color-inner: #CACA20;
+    --color-button-hover: #D8A0A0;
+
+    background-color: var(--color1);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+header {
+    font-size: 3rem;
+    background-color: var(--color2);
+
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+
+    flex-grow: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 2.5em;
+}
+
+nav > button {
+    border-style: none;
+    background-color: unset;
+    font-size: 4em;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--color-button-hover);
+}
+
+footer {
+    background-color: var(--color2);
+
+}
+
+div#content {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+
+    min-height: 240px;
+    min-width: 50vh;
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+
+    border-radius: 1em;
+    background-color: var(--color2);
+}
+
+.outer-container,
+.inner-container {
+    background-color: var(--color-outer);
+    border-radius: 8px;
+}
+
+.inner-container {
+    background-color: var(--color-inner);
+    padding: 0.4em;
+}
+
+.inner-container > h2 {
+    font-weight: 900;
+}
+
+.inner-container > h3 {
+    font-weight: 300;
+}
+
+.container > * {
+    font-size: 2rem;
+    margin: 0.5em;
+}
+
+.about-heading-container {
+    margin-top: 2em;
+}
+
+.about-heading-container > h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.review-container {
+    max-width: 50%;
+    padding: 1em;
+}
+
+.inner-review-container > h2 {
+    text-align: justify;
+}
+
+.inner-review-container > h3 {
+    text-align: right;
+    margin-top: -0.7em;
+}
+
+.openhours-inner-container > h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.4em;
+
+    text-align: center;
+}
+
+.openhours-inner-container > ul,
+ul > li {
+    list-style: none;
+    font-size: 1.6rem;
+
+    text-align: center;
+    padding: 0.4em;
+}
+
+.location-container  {
+    margin-bottom: 2em;
+}
+
+.location-inner-container > * {
+    font-size: 1.6rem;
+
+    text-align: center;
+    padding: 0.4em;
+}
+
+.footer-container {
+    font-size: 2em;
+    text-align: center;
+
+    padding: 1em;
+}
+
+ul.ul-left > li{
+    text-align: left;
+}
